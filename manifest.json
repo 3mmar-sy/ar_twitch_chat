@@ -1,0 +1,28 @@
+{ 
+	"manifest_version": 3,
+	"name": "تويتش شات",
+	"version": "0.0.1",
+	"description": "SAWA4D",
+	"icons": {
+		"128": "logo.png"
+	},
+    "permissions": ["tabs","activeTab","declarativeNetRequest"],
+    "content_scripts": [{
+        "css": ["0.css"],
+        "js": ["content.js"],
+        "matches": ["https://www.twitch.tv/*"]
+	}],
+    "background": {
+      	"service_worker": "background.js"
+    },
+    "action": {
+      	"default_popup": "popup.html",
+      	"default_icon": {
+        	"128": "logo.png"
+      	}
+    },
+	"web_accessible_resources": [{
+		"resources":["0.css"],
+        "matches": ["https://www.twitch.tv/*"]
+	}]
+}
