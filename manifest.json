@@ -1,7 +1,7 @@
 { 
 	"manifest_version": 3,
 	"name": "تويتش شات",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "SAWA4D",
 	"icons": {
 		"128": "logo.png"
